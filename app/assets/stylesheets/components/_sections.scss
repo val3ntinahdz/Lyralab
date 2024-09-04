@@ -1,0 +1,70 @@
+.section-container {
+  color: #212121;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 55px;
+}
+
+.section-container.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.services {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.service {
+  text-align: center;
+  max-width: 200px;
+}
+
+.service i {
+  font-size: 40px;
+  color: $service-icon-color;
+  margin-bottom: 10px;
+}
+
+.lyra-founder {
+  font-size: 22px;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: bolder;
+  color: $founder-text-color;
+  margin: 10px 0;
+}
+
+.description {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 17px;
+  margin: 10px 0;
+}
+
+.lyra-description {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 20px;
+  margin: 20px 0;
+}
+
+.section-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.section-title span {
+  color: $highlight-color;
+  font-size: 50px;
+}
+
+.founders-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+  padding: 25px;
+}

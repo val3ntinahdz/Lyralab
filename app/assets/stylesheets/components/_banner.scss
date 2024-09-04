@@ -1,0 +1,25 @@
+.banner-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 150px;
+}
+
+.banner-title {
+  font-family: "Playfair Display", serif;
+  font-size: 60px;
+  margin-bottom: 10px;
+  font-style: italic;
+}
+
+.banner-title span {
+  text-decoration: underline;
+  text-decoration-color: $primary-color;
+}
+
+.slogan {
+  font-size: 30px;
+  font-family: "Quicksand", sans-serif;
+  margin-bottom: 20px;
+  font-weight: bold;
+}

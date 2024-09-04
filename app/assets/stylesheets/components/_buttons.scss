@@ -1,0 +1,17 @@
+.start-button {
+  font-family: 'Quicksand', sans-serif;
+  background-color: $secondary-color;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: 1px solid $button-border-color;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.start-button:hover {
+  background-color: $hover-color;
+  transform: scale(1.05);
+}

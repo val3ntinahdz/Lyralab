@@ -1,0 +1,25 @@
+footer {
+  margin-top: 60px;
+  background-color: $footer-background-color;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.basic-info {
+  font-family: "DM Sans", sans-serif;
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 25px 0;
+  font-size: 2em;
+  color: $social-icons-color;
+}
