@@ -1,25 +1,22 @@
 footer {
-  margin-top: 60px;
-  background-color: $footer-background-color;
-  color: white;
+  background-color: #7595ff;
+  padding: 20px;
   text-align: center;
-  padding: 10px 0;
-  bottom: 0;
-  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #ddd;
 }
 
-.basic-info {
-  font-family: "DM Sans", sans-serif;
-  display: flex;
-  justify-content: space-around;
-  margin: 20px 0;
+.col {
+  margin: 0;
 }
 
 .social-icons {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin: 25px 0;
-  font-size: 2em;
-  color: $social-icons-color;
+  display: flex;  /* Arrange icons in a row */
+}
+
+.social-icons a {
+  color: #e6e2e2;
+  font-size: 20px;
+  margin: 0 10px;
 }
