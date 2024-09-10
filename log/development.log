@@ -1580,3 +1580,327 @@ Processing by HomeController#index as HTML
 Completed 200 OK in 111ms (Views: 106.6ms | ActiveRecord: 0.0ms | Allocations: 30628)
 
 
+Started GET "/" for 127.0.0.1 at 2024-09-09 21:58:15 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/_banner.html.erb (Duration: 702.6ms | Allocations: 61870)
+  Rendered home/_about.html.erb (Duration: 7.0ms | Allocations: 1480)
+  Rendered home/_founders.html.erb (Duration: 4.9ms | Allocations: 1018)
+  Rendered home/_contact.html.erb (Duration: 1.3ms | Allocations: 91)
+  Rendered home/_modal.html.erb (Duration: 1.2ms | Allocations: 118)
+  Rendered home/index.html.erb within layouts/application (Duration: 732.9ms | Allocations: 65481)
+  Rendered shared/_navbar.html.erb (Duration: 2.6ms | Allocations: 564)
+  Rendered shared/_footer.html.erb (Duration: 1.0ms | Allocations: 107)
+  Rendered layout layouts/application.html.erb (Duration: 832.5ms | Allocations: 90895)
+Completed 200 OK in 909ms (Views: 843.6ms | ActiveRecord: 0.0ms | Allocations: 95231)
+
+
+Started GET "/" for 127.0.0.1 at 2024-09-09 22:00:15 -0600
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/_banner.html.erb (Duration: 24.1ms | Allocations: 850)
+  Rendered home/_about.html.erb (Duration: 8.0ms | Allocations: 1462)
+  Rendered home/_founders.html.erb (Duration: 6.5ms | Allocations: 1008)
+  Rendered home/_contact.html.erb (Duration: 0.8ms | Allocations: 90)
+  Rendered home/_modal.html.erb (Duration: 0.8ms | Allocations: 117)
+  Rendered home/index.html.erb within layouts/application (Duration: 50.9ms | Allocations: 4287)
+  Rendered shared/_navbar.html.erb (Duration: 2.6ms | Allocations: 606)
+  Rendered shared/_footer.html.erb (Duration: 0.9ms | Allocations: 106)
+  Rendered layout layouts/application.html.erb (Duration: 174.5ms | Allocations: 30614)
+Completed 200 OK in 198ms (Views: 183.5ms | ActiveRecord: 0.0ms | Allocations: 31692)
+
+
+Started GET "/" for 127.0.0.1 at 2024-09-09 22:10:35 -0600
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/_banner.html.erb (Duration: 17.1ms | Allocations: 853)
+  Rendered home/_about.html.erb (Duration: 560.0ms | Allocations: 51495)
+  Rendered home/_founders.html.erb (Duration: 3.6ms | Allocations: 1012)
+  Rendered home/_contact.html.erb (Duration: 0.7ms | Allocations: 90)
+  Rendered home/_modal.html.erb (Duration: 0.5ms | Allocations: 117)
+  Rendered home/index.html.erb within layouts/application (Duration: 597.3ms | Allocations: 54331)
+  Rendered shared/_navbar.html.erb (Duration: 9.0ms | Allocations: 564)
+  Rendered shared/_footer.html.erb (Duration: 1.0ms | Allocations: 106)
+  Rendered layout layouts/application.html.erb (Duration: 726.9ms | Allocations: 79580)
+Completed 200 OK in 776ms (Views: 735.9ms | ActiveRecord: 0.0ms | Allocations: 80663)
+
+
+Started GET "/" for 127.0.0.1 at 2024-09-09 22:20:05 -0600
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/_banner.html.erb (Duration: 19.3ms | Allocations: 853)
+  Rendered home/_about.html.erb (Duration: 451.9ms | Allocations: 51529)
+  Rendered home/_founders.html.erb (Duration: 3.6ms | Allocations: 1012)
+  Rendered home/_contact.html.erb (Duration: 2.0ms | Allocations: 90)
+  Rendered home/_modal.html.erb (Duration: 0.9ms | Allocations: 117)
+  Rendered home/index.html.erb within layouts/application (Duration: 507.6ms | Allocations: 54363)
+  Rendered shared/_navbar.html.erb (Duration: 3.5ms | Allocations: 564)
+  Rendered shared/_footer.html.erb (Duration: 1.4ms | Allocations: 106)
+  Rendered layout layouts/application.html.erb (Duration: 660.1ms | Allocations: 79829)
+Completed 200 OK in 688ms (Views: 677.8ms | ActiveRecord: 0.0ms | Allocations: 80911)
+
+
+Started GET "/" for 127.0.0.1 at 2024-09-09 22:34:47 -0600
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/_banner.html.erb (Duration: 90.7ms | Allocations: 856)
+  Rendered home/_about.html.erb (Duration: 449.7ms | Allocations: 51708)
+  Rendered home/_founders.html.erb (Duration: 10.5ms | Allocations: 1016)
+  Rendered home/_contact.html.erb (Duration: 2.6ms | Allocations: 90)
+  Rendered home/_modal.html.erb (Duration: 0.8ms | Allocations: 117)
+  Rendered home/index.html.erb within layouts/application (Duration: 574.0ms | Allocations: 54549)
+  Rendered shared/_navbar.html.erb (Duration: 5.0ms | Allocations: 566)
+  Rendered shared/_footer.html.erb (Duration: 1.2ms | Allocations: 106)
+  Rendered layout layouts/application.html.erb (Duration: 731.4ms | Allocations: 80090)
+Completed 200 OK in 932ms (Views: 774.9ms | ActiveRecord: 0.0ms | Allocations: 81173)
+
+
+Started GET "/" for 127.0.0.1 at 2024-09-09 22:43:13 -0600
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/_banner.html.erb (Duration: 33.5ms | Allocations: 858)
+  Rendered home/_about.html.erb (Duration: 566.8ms | Allocations: 52069)
+  Rendered home/_founders.html.erb (Duration: 6.4ms | Allocations: 1024)
+  Rendered home/_contact.html.erb (Duration: 0.8ms | Allocations: 90)
+  Rendered home/_modal.html.erb (Duration: 0.7ms | Allocations: 117)
+  Rendered home/index.html.erb within layouts/application (Duration: 630.0ms | Allocations: 54918)
+  Rendered shared/_navbar.html.erb (Duration: 3.0ms | Allocations: 568)
+  Rendered shared/_footer.html.erb (Duration: 1.4ms | Allocations: 106)
+  Rendered layout layouts/application.html.erb (Duration: 758.6ms | Allocations: 80336)
+Completed 200 OK in 799ms (Views: 782.4ms | ActiveRecord: 0.0ms | Allocations: 81415)
+
+
+Started GET "/" for 127.0.0.1 at 2024-09-09 22:58:49 -0600
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/_banner.html.erb (Duration: 59.3ms | Allocations: 861)
+  Rendered home/_about.html.erb (Duration: 738.8ms | Allocations: 52496)
+  Rendered home/_founders.html.erb (Duration: 7.0ms | Allocations: 1026)
+  Rendered home/_contact.html.erb (Duration: 1.0ms | Allocations: 90)
+  Rendered home/_modal.html.erb (Duration: 1.2ms | Allocations: 117)
+  Rendered home/index.html.erb within layouts/application (Duration: 839.1ms | Allocations: 55350)
+  Rendered shared/_navbar.html.erb (Duration: 6.6ms | Allocations: 571)
+  Rendered shared/_footer.html.erb (Duration: 1.3ms | Allocations: 106)
+  Rendered layout layouts/application.html.erb (Duration: 988.0ms | Allocations: 80698)
+Completed 200 OK in 1079ms (Views: 1048.9ms | ActiveRecord: 0.0ms | Allocations: 81782)
+
+
+Started GET "/" for 127.0.0.1 at 2024-09-09 23:01:35 -0600
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/_banner.html.erb (Duration: 113.8ms | Allocations: 603)
+  Rendered home/_about.html.erb (Duration: 28.8ms | Allocations: 1298)
+  Rendered home/_founders.html.erb (Duration: 27.7ms | Allocations: 872)
+  Rendered home/_contact.html.erb (Duration: 1.6ms | Allocations: 8)
+  Rendered home/_modal.html.erb (Duration: 1.1ms | Allocations: 8)
+  Rendered home/index.html.erb within layouts/application (Duration: 210.2ms | Allocations: 3062)
+  Rendered shared/_navbar.html.erb (Duration: 7.2ms | Allocations: 443)
+  Rendered shared/_footer.html.erb (Duration: 3.4ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 24031.5ms | Allocations: 82282)
+Completed 200 OK in 24103ms (Views: 24065.5ms | ActiveRecord: 0.0ms | Allocations: 82553)
+
+
+Started GET "/" for 127.0.0.1 at 2024-09-09 23:06:21 -0600
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/_banner.html.erb (Duration: 38.7ms | Allocations: 861)
+  Rendered home/_about.html.erb (Duration: 23.0ms | Allocations: 1480)
+  Rendered home/_founders.html.erb (Duration: 13.7ms | Allocations: 1025)
+  Rendered home/_contact.html.erb (Duration: 0.9ms | Allocations: 90)
+  Rendered home/_modal.html.erb (Duration: 1.2ms | Allocations: 117)
+  Rendered home/index.html.erb within layouts/application (Duration: 202.6ms | Allocations: 4337)
+  Rendered shared/_navbar.html.erb (Duration: 6.0ms | Allocations: 572)
+  Rendered shared/_footer.html.erb (Duration: 2.9ms | Allocations: 106)
+  Rendered layout layouts/application.html.erb (Duration: 21993.4ms | Allocations: 100329)
+Completed 200 OK in 22083ms (Views: 22057.2ms | ActiveRecord: 0.0ms | Allocations: 101408)
+
+
+Started GET "/" for 127.0.0.1 at 2024-09-09 23:07:10 -0600
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/_banner.html.erb (Duration: 9.8ms | Allocations: 605)
+  Rendered home/_about.html.erb (Duration: 11.8ms | Allocations: 1304)
+  Rendered home/_founders.html.erb (Duration: 23.4ms | Allocations: 876)
+  Rendered home/_contact.html.erb (Duration: 0.1ms | Allocations: 8)
+  Rendered home/_modal.html.erb (Duration: 0.1ms | Allocations: 8)
+  Rendered home/index.html.erb within layouts/application (Duration: 49.0ms | Allocations: 3074)
+  Rendered shared/_navbar.html.erb (Duration: 79.9ms | Allocations: 440)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 18878.1ms | Allocations: 81752)
+Completed 200 OK in 18883ms (Views: 18880.6ms | ActiveRecord: 0.0ms | Allocations: 82020)
+
+
+Started GET "/" for 127.0.0.1 at 2024-09-09 23:09:06 -0600
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/_banner.html.erb (Duration: 28.6ms | Allocations: 606)
+  Rendered home/_about.html.erb (Duration: 36.8ms | Allocations: 1307)
+  Rendered home/_founders.html.erb (Duration: 12.9ms | Allocations: 876)
+  Rendered home/_contact.html.erb (Duration: 0.1ms | Allocations: 8)
+  Rendered home/_modal.html.erb (Duration: 0.4ms | Allocations: 8)
+  Rendered home/index.html.erb within layouts/application (Duration: 86.8ms | Allocations: 3078)
+  Rendered shared/_navbar.html.erb (Duration: 2.7ms | Allocations: 442)
+  Rendered shared/_footer.html.erb (Duration: 0.2ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 19865.1ms | Allocations: 81853)
+Completed 200 OK in 19884ms (Views: 19878.1ms | ActiveRecord: 0.0ms | Allocations: 82103)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/application-55ff8ee9b9852416a260c359d3a76fa09e8415c208299ffe3208bf46cc7d8c1b.css"):
+  
+Started GET "/" for 127.0.0.1 at 2024-09-09 23:09:57 -0600
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/_banner.html.erb (Duration: 7.9ms | Allocations: 709)
+  Rendered home/_about.html.erb (Duration: 4.3ms | Allocations: 1304)
+  Rendered home/_founders.html.erb (Duration: 2.7ms | Allocations: 876)
+  Rendered home/_contact.html.erb (Duration: 0.1ms | Allocations: 8)
+  Rendered home/_modal.html.erb (Duration: 0.2ms | Allocations: 8)
+  Rendered home/index.html.erb within layouts/application (Duration: 20.2ms | Allocations: 3178)
+  Rendered shared/_navbar.html.erb (Duration: 1.7ms | Allocations: 442)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 15883.1ms | Allocations: 82252)
+Completed 200 OK in 15888ms (Views: 15886.5ms | ActiveRecord: 0.0ms | Allocations: 82542)
+
+
+Started GET "/" for 127.0.0.1 at 2024-09-09 23:11:31 -0600
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/_banner.html.erb (Duration: 6.4ms | Allocations: 861)
+  Rendered home/_about.html.erb (Duration: 6.5ms | Allocations: 1474)
+  Rendered home/_founders.html.erb (Duration: 7.1ms | Allocations: 1022)
+  Rendered home/_contact.html.erb (Duration: 0.9ms | Allocations: 90)
+  Rendered home/_modal.html.erb (Duration: 0.6ms | Allocations: 117)
+  Rendered home/index.html.erb within layouts/application (Duration: 35.4ms | Allocations: 4328)
+  Rendered shared/_navbar.html.erb (Duration: 2.4ms | Allocations: 574)
+  Rendered shared/_footer.html.erb (Duration: 2.9ms | Allocations: 106)
+  Rendered layout layouts/application.html.erb (Duration: 19320.7ms | Allocations: 100343)
+Completed 200 OK in 19340ms (Views: 19334.0ms | ActiveRecord: 0.0ms | Allocations: 101421)
+
+
+Started GET "/" for 127.0.0.1 at 2024-09-09 23:12:21 -0600
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/_banner.html.erb (Duration: 3.7ms | Allocations: 608)
+  Rendered home/_about.html.erb (Duration: 12.4ms | Allocations: 1313)
+  Rendered home/_founders.html.erb (Duration: 3.3ms | Allocations: 872)
+  Rendered home/_contact.html.erb (Duration: 0.1ms | Allocations: 8)
+  Rendered home/_modal.html.erb (Duration: 0.1ms | Allocations: 8)
+  Rendered home/index.html.erb within layouts/application (Duration: 23.3ms | Allocations: 3082)
+  Rendered shared/_navbar.html.erb (Duration: 1.4ms | Allocations: 443)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 16824.5ms | Allocations: 81778)
+Completed 200 OK in 16830ms (Views: 16828.5ms | ActiveRecord: 0.0ms | Allocations: 82046)
+
+
+Started GET "/" for 127.0.0.1 at 2024-09-09 23:12:56 -0600
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/_banner.html.erb (Duration: 71.8ms | Allocations: 606)
+  Rendered home/_about.html.erb (Duration: 50.6ms | Allocations: 1299)
+  Rendered home/_founders.html.erb (Duration: 12.5ms | Allocations: 872)
+  Rendered home/_contact.html.erb (Duration: 0.8ms | Allocations: 8)
+  Rendered home/_modal.html.erb (Duration: 0.8ms | Allocations: 8)
+  Rendered home/index.html.erb within layouts/application (Duration: 195.0ms | Allocations: 3066)
+  Rendered shared/_navbar.html.erb (Duration: 7.4ms | Allocations: 443)
+  Rendered shared/_footer.html.erb (Duration: 1.5ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 23059.9ms | Allocations: 81662)
+Completed 200 OK in 23288ms (Views: 23238.3ms | ActiveRecord: 0.0ms | Allocations: 81915)
+
+
+Started GET "/" for 127.0.0.1 at 2024-09-09 23:23:57 -0600
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/_banner.html.erb (Duration: 89.9ms | Allocations: 861)
+  Rendered home/_about.html.erb (Duration: 53.2ms | Allocations: 1482)
+  Rendered home/_founders.html.erb (Duration: 2227.1ms | Allocations: 52075)
+  Rendered home/_contact.html.erb (Duration: 1.1ms | Allocations: 90)
+  Rendered home/_modal.html.erb (Duration: 50.8ms | Allocations: 118)
+  Rendered home/index.html.erb within layouts/application (Duration: 2469.3ms | Allocations: 55390)
+  Rendered shared/_navbar.html.erb (Duration: 10.9ms | Allocations: 572)
+  Rendered shared/_footer.html.erb (Duration: 1.0ms | Allocations: 106)
+  Rendered layout layouts/application.html.erb (Duration: 3452.7ms | Allocations: 80736)
+Completed 200 OK in 3576ms (Views: 3499.7ms | ActiveRecord: 0.0ms | Allocations: 81814)
+
+
+Started GET "/" for 127.0.0.1 at 2024-09-09 23:31:48 -0600
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/_banner.html.erb (Duration: 132.2ms | Allocations: 864)
+  Rendered home/_about.html.erb (Duration: 55.7ms | Allocations: 1474)
+  Rendered home/_founders.html.erb (Duration: 21892.9ms | Allocations: 122082)
+  Rendered home/_contact.html.erb (Duration: 1.3ms | Allocations: 94)
+  Rendered home/_modal.html.erb (Duration: 1.5ms | Allocations: 117)
+  Rendered home/index.html.erb within layouts/application (Duration: 22119.7ms | Allocations: 125391)
+  Rendered shared/_navbar.html.erb (Duration: 5.2ms | Allocations: 570)
+  Rendered shared/_footer.html.erb (Duration: 1.6ms | Allocations: 106)
+  Rendered layout layouts/application.html.erb (Duration: 22282.1ms | Allocations: 150810)
+Completed 200 OK in 22372ms (Views: 22346.1ms | ActiveRecord: 0.0ms | Allocations: 151887)
+
+
+Started GET "/" for 127.0.0.1 at 2024-09-09 23:32:53 -0600
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/_banner.html.erb (Duration: 5.9ms | Allocations: 603)
+  Rendered home/_about.html.erb (Duration: 15.2ms | Allocations: 1298)
+  Rendered home/_founders.html.erb (Duration: 4.4ms | Allocations: 893)
+  Rendered home/_contact.html.erb (Duration: 0.2ms | Allocations: 8)
+  Rendered home/_modal.html.erb (Duration: 0.2ms | Allocations: 8)
+  Rendered home/index.html.erb within layouts/application (Duration: 38.3ms | Allocations: 3083)
+  Rendered shared/_navbar.html.erb (Duration: 2.2ms | Allocations: 443)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 21761.6ms | Allocations: 81735)
+Completed 200 OK in 21767ms (Views: 21765.9ms | ActiveRecord: 0.0ms | Allocations: 82003)
+
+
+Started GET "/" for 127.0.0.1 at 2024-09-09 23:33:43 -0600
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/_banner.html.erb (Duration: 14.4ms | Allocations: 603)
+  Rendered home/_about.html.erb (Duration: 27.1ms | Allocations: 1298)
+  Rendered home/_founders.html.erb (Duration: 20.0ms | Allocations: 893)
+  Rendered home/_contact.html.erb (Duration: 6.7ms | Allocations: 8)
+  Rendered home/_modal.html.erb (Duration: 1.8ms | Allocations: 8)
+  Rendered home/index.html.erb within layouts/application (Duration: 76.7ms | Allocations: 3083)
+  Rendered shared/_navbar.html.erb (Duration: 3.2ms | Allocations: 443)
+  Rendered shared/_footer.html.erb (Duration: 0.2ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 30222.5ms | Allocations: 81743)
+Completed 200 OK in 30252ms (Views: 30239.2ms | ActiveRecord: 0.0ms | Allocations: 81993)
+
+
+Started GET "/" for 127.0.0.1 at 2024-09-09 23:34:59 -0600
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/_banner.html.erb (Duration: 9.1ms | Allocations: 618)
+  Rendered home/_about.html.erb (Duration: 15.6ms | Allocations: 1298)
+  Rendered home/_founders.html.erb (Duration: 4.8ms | Allocations: 893)
+  Rendered home/_contact.html.erb (Duration: 0.3ms | Allocations: 8)
+  Rendered home/_modal.html.erb (Duration: 3.0ms | Allocations: 8)
+  Rendered home/index.html.erb within layouts/application (Duration: 50.6ms | Allocations: 3098)
+  Rendered shared/_navbar.html.erb (Duration: 1.9ms | Allocations: 443)
+  Rendered shared/_footer.html.erb (Duration: 0.2ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 25786.5ms | Allocations: 81753)
+Completed 200 OK in 25799ms (Views: 25794.8ms | ActiveRecord: 0.0ms | Allocations: 82008)
+
+
