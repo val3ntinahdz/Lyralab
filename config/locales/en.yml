@@ -29,3 +29,17 @@
 
 en:
   hello: "Hello world"
+  lyralab:
+    banner_title: "Explore Opportunities in <span>STEAM</span>"
+    banner_description: "learn from experts and connect with a passionate community."
+    about_1:
+      title: "A Technological and Artistic Approach: LyraLab"
+      description: "At LyraLab, we are dedicated to promoting education in Science, Technology, Engineering, Arts, and Mathematics (STEAM) by developing original resources and practical tools for young people. Our vision is to offer a dynamic learning space through workshops, webinars, courses, and other interactive tools."
+    about_2:
+      title: "A <span>#STEAM</span> Future"
+      description: "We believe that a solid education in any STEAM field is key to facing the challenges of the future and encouraging skills such as critical thinking and creativity. As we move forward, we are working to build a platform that supports and provides opportunities for young people interested in these areas."
+    about_3:
+      title: "Education with a Gender Perspective"
+      description: "We know that education must be inclusive and equitable, which is why we are committed to ensuring that all young people, regardless of gender, have access to educational opportunities in a fair and respectful environment. We foster equality, promote opportunities for all, and inspire full development without gender barriers."
+    buttons:
+      join: "Join Now"

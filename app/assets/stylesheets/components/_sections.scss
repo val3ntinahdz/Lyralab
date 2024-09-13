@@ -15,22 +15,22 @@
   transform: translateY(0);
 }
 
-.services {
-  display: flex;
-  justify-content: space-around;
-  margin-top: 20px;
-}
+// .services {
+//   display: flex;
+//   justify-content: space-around;
+//   margin-top: 20px;
+// }
 
-.service {
-  text-align: center;
-  max-width: 100px;
-}
+// .service {
+//   text-align: center;
+//   max-width: 100px;
+// }
 
-.service i {
-  font-size: 35px;
-  color: $service-icon-color;
-  margin-bottom: 10px;
-}
+// .service i {
+//   font-size: 35px;
+//   color: $service-icon-color;
+//   margin-bottom: 10px;
+// }
 
 .lyra-founder {
   font-size: 22px;
@@ -45,6 +45,7 @@
   font-size: 17px;
   margin: 10px 0;
   color: white;
+  text-align: justify;
 }
 
 .lyra-description {
@@ -61,23 +62,30 @@
 }
 
 .section-title span {
-  color: $highlight-color;
+  color: $primary-color;
   font-size: 50px;
 }
 
 .founders-container {
   display: flex;
   justify-content: space-around;
-  margin-top: 20px;
+  margin-top: 0;
   padding: 25px;
   background-color: #131225;
+}
+
+.founder {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  width: 500px;
+  justify-content:flex-start;
 }
 
 .section-content {
   display: flex;
   background-color: rgb(252, 250, 246);
   padding: 25px;
-  margin: 10px;
 }
 
 .founder-image {
