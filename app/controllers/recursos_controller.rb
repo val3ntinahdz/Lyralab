@@ -3,7 +3,14 @@ class RecursosController < ApplicationController
   before_action :set_resource, only: [:show, :edit, :update, :destroy]
 
   def index
-    @recursos = Recurso.all
+    @categories = Category.all
+
+    if params[:category_id].present?
+      @category = Category.find(params[:category_id])
+      @recursos = @category.recursos
+    else
+      @recursos = Recurso.all
+    end
   end
 
   def show
@@ -39,7 +46,7 @@ class RecursosController < ApplicationController
   private
 
   def resource_params
-    params.require(:recurso).permit(:titulo, :categoria, :url, :descripcion)
+    params.require(:recurso).permit(:titulo, :url, :descripcion, :category_id)
   end
 
   def set_resource

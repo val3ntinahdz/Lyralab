@@ -1,10 +1,14 @@
 <h1>Recursos STEAM</h1>
 
-<%= Recurso::CATEGORIES.each do |categoria| %>
-  <h2><%= categoria %></h2>
-  <ul>
-    <% Recurso.where(categoria: categoria).each do |resource| %>
-      <li><%= link_to resource.title, resource %></li>
-    <% end %>
-  </ul>
+<%= form_with url: recursos_path, method: :get do |f| %>
+  <%= select_tag :category_id, options_from_collection_for_select(Category.all, :id, :name, params[:category_id]), prompt: "Selecciona una categoría" %>
+  <%= f.submit "Filtrar" %>
+<% end %>
+
+
+<% @recursos.each do |recurso| %>
+  <h3><%= recurso.titulo %></h3>
+  <p><%= recurso.descripcion %></p>
+  <p>Categoria: <%= recurso.category.name %></p>
+  <p><%= recurso.url %></p>
 <% end %>
