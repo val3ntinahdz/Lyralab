@@ -4409,3 +4409,178 @@ Processing by HomeController#index as HTML
 Completed 200 OK in 67ms (Views: 63.1ms | ActiveRecord: 0.0ms | Allocations: 12078)
 
 
+Started GET "/" for 127.0.0.1 at 2024-09-17 14:54:59 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/_banner.html.erb (Duration: 6315.8ms | Allocations: 88346)
+  Rendered home/_about.html.erb (Duration: 5.9ms | Allocations: 1752)
+  Rendered home/_founders.html.erb (Duration: 9.3ms | Allocations: 1058)
+  Rendered home/_contact.html.erb (Duration: 0.9ms | Allocations: 91)
+  Rendered home/_modal.html.erb (Duration: 0.7ms | Allocations: 118)
+  Rendered home/index.html.erb within layouts/application (Duration: 6348.9ms | Allocations: 92317)
+  Rendered shared/_navbar.html.erb (Duration: 5.6ms | Allocations: 573)
+  Rendered shared/_language_menu.html.erb (Duration: 3.4ms | Allocations: 353)
+  Rendered shared/_footer.html.erb (Duration: 1.1ms | Allocations: 107)
+  Rendered layout layouts/application.html.erb (Duration: 6448.4ms | Allocations: 118299)
+Completed 200 OK in 6607ms (Views: 6517.2ms | ActiveRecord: 0.0ms | Allocations: 122064)
+
+
+Started GET "/?locale=fr" for 127.0.0.1 at 2024-09-17 14:55:24 -0600
+Processing by HomeController#index as HTML
+  Parameters: {"locale"=>"fr"}
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/_banner.html.erb (Duration: 3.1ms | Allocations: 703)
+  Rendered home/_about.html.erb (Duration: 10.3ms | Allocations: 1397)
+  Rendered home/_founders.html.erb (Duration: 7.0ms | Allocations: 893)
+  Rendered home/_contact.html.erb (Duration: 0.1ms | Allocations: 8)
+  Rendered home/_modal.html.erb (Duration: 0.6ms | Allocations: 8)
+  Rendered home/index.html.erb within layouts/application (Duration: 31.7ms | Allocations: 3289)
+  Rendered shared/_navbar.html.erb (Duration: 2.2ms | Allocations: 450)
+  Rendered shared/_language_menu.html.erb (Duration: 1.0ms | Allocations: 144)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 296.7ms | Allocations: 15715)
+Completed 200 OK in 302ms (Views: 298.6ms | ActiveRecord: 0.0ms | Allocations: 16119)
+
+
+Started GET "/?locale=en" for 127.0.0.1 at 2024-09-17 14:59:47 -0600
+Processing by HomeController#index as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/_banner.html.erb (Duration: 22.5ms | Allocations: 988)
+  Rendered home/_about.html.erb (Duration: 26.4ms | Allocations: 1669)
+  Rendered home/_founders.html.erb (Duration: 8.6ms | Allocations: 1048)
+  Rendered home/_contact.html.erb (Duration: 1.0ms | Allocations: 90)
+  Rendered home/_modal.html.erb (Duration: 1.0ms | Allocations: 117)
+  Rendered home/index.html.erb within layouts/application (Duration: 101.3ms | Allocations: 4678)
+  Rendered shared/_navbar.html.erb (Duration: 4.1ms | Allocations: 570)
+  Rendered shared/_language_menu.html.erb (Duration: 6.1ms | Allocations: 306)
+  Rendered shared/_footer.html.erb (Duration: 0.9ms | Allocations: 106)
+  Rendered layout layouts/application.html.erb (Duration: 336.5ms | Allocations: 30485)
+Completed 200 OK in 355ms (Views: 344.3ms | ActiveRecord: 0.0ms | Allocations: 31651)
+
+
+  [1m[36mActiveRecord::InternalMetadata Load (1.2ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[36mActiveRecord::InternalMetadata Create (11.7ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ('environment', 'development', '2024-09-18 00:18:51.123408', '2024-09-18 00:18:51.123418') RETURNING "key"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to DeviseCreateUsers (20240918001836)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (4.7ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime(6), "remember_created_at" datetime(6), "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (1.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20240918001836') RETURNING "version"[0m
+  [1m[36mTRANSACTION (3.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddAdminToUsers (20240918002010)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (3.8ms)[0m  [1m[35mALTER TABLE "users" ADD "admin" boolean[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20240918002010') RETURNING "version"[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateRecursos (20240918002157)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (2.7ms)[0m  [1m[35mCREATE TABLE "recursos" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "titulo" varchar, "categoria" varchar, "url" varchar, "descripcion" text, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20240918002157') RETURNING "version"[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/recursos" for 127.0.0.1 at 2024-09-17 18:39:19 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by RecursosController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering recursos/index.html.erb within layouts/application
+  [1m[36mRecurso Load (2.0ms)[0m  [1m[34mSELECT "recursos".* FROM "recursos" WHERE "recursos"."category" = ?[0m  [["category", "Ciencia"]]
+  ↳ app/views/recursos/index.html.erb:6
+  Rendered recursos/index.html.erb within layouts/application (Duration: 38.2ms | Allocations: 5559)
+  Rendered layout layouts/application.html.erb (Duration: 40.5ms | Allocations: 5691)
+Completed 500 Internal Server Error in 134ms (ActiveRecord: 12.2ms | Allocations: 12607)
+
+
+  
+ActionView::Template::Error (SQLite3::SQLException: no such column: recursos.category):
+    3: <%= Recurso::CATEGORIES.each do |category| %>
+    4:   <h2><%= category %></h2>
+    5:   <ul>
+    6:     <% Recurso.where(category: category).each do |resource| %>
+    7:       <li><%= link_to resource.title, resource %></li>
+    8:     <% end %>
+    9:   </ul>
+  
+Started GET "/recursos" for 127.0.0.1 at 2024-09-17 18:39:52 -0600
+Processing by RecursosController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering recursos/index.html.erb within layouts/application
+  Rendered recursos/index.html.erb within layouts/application (Duration: 17.3ms | Allocations: 5078)
+  Rendered layout layouts/application.html.erb (Duration: 17.9ms | Allocations: 5167)
+Completed 500 Internal Server Error in 31ms (ActiveRecord: 0.0ms | Allocations: 7282)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `category' for #<ActionView::Base:0x00000000012660>
+
+  <h2>'.freeze; @output_buffer.append=( category ); @output_buffer.safe_append='</h2>
+                                        ^^^^^^^^
+Did you mean?  categoria):
+    1: <h1>Recursos STEAM</h1>
+    2: 
+    3: <%= Recurso::CATEGORIES.each do |categoria| %>
+    4:   <h2><%= category %></h2>
+    5:   <ul>
+    6:     <% Recurso.where(categoria: categoria).each do |resource| %>
+    7:       <li><%= link_to resource.title, resource %></li>
+  
+app/views/recursos/index.html.erb:4
+app/views/recursos/index.html.erb:3:in `each'
+app/views/recursos/index.html.erb:3
+Started GET "/recursos" for 127.0.0.1 at 2024-09-17 18:40:09 -0600
+Processing by RecursosController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering recursos/index.html.erb within layouts/application
+  [1m[36mRecurso Load (0.2ms)[0m  [1m[34mSELECT "recursos".* FROM "recursos" WHERE "recursos"."categoria" = ?[0m  [["categoria", "Ciencia"]]
+  ↳ app/views/recursos/index.html.erb:6
+  [1m[36mRecurso Load (0.1ms)[0m  [1m[34mSELECT "recursos".* FROM "recursos" WHERE "recursos"."categoria" = ?[0m  [["categoria", "Tecnología"]]
+  ↳ app/views/recursos/index.html.erb:6
+  [1m[36mRecurso Load (0.2ms)[0m  [1m[34mSELECT "recursos".* FROM "recursos" WHERE "recursos"."categoria" = ?[0m  [["categoria", "Ingeniería"]]
+  ↳ app/views/recursos/index.html.erb:6
+  [1m[36mRecurso Load (0.2ms)[0m  [1m[34mSELECT "recursos".* FROM "recursos" WHERE "recursos"."categoria" = ?[0m  [["categoria", "Matemáticas"]]
+  ↳ app/views/recursos/index.html.erb:6
+  [1m[36mRecurso Load (0.1ms)[0m  [1m[34mSELECT "recursos".* FROM "recursos" WHERE "recursos"."categoria" = ?[0m  [["categoria", "Arte"]]
+  ↳ app/views/recursos/index.html.erb:6
+  Rendered recursos/index.html.erb within layouts/application (Duration: 34.3ms | Allocations: 4426)
+  Rendered shared/_navbar.html.erb (Duration: 4.9ms | Allocations: 633)
+  Rendered shared/_language_menu.html.erb (Duration: 1.6ms | Allocations: 353)
+  Rendered shared/_footer.html.erb (Duration: 1.0ms | Allocations: 107)
+  Rendered layout layouts/application.html.erb (Duration: 465.0ms | Allocations: 70549)
+Completed 200 OK in 475ms (Views: 464.1ms | ActiveRecord: 4.5ms | Allocations: 72717)
+
+
+Started GET "/recursos/new" for 127.0.0.1 at 2024-09-17 18:40:20 -0600
+Processing by RecursosController#new as HTML
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.0ms | Allocations: 1956)
+
+
+  
+NoMethodError (undefined method `admin?' for nil:NilClass
+
+    redirect_to root_path unless current_user.admin?
+                                             ^^^^^^^):
+  
+app/controllers/recursos_controller.rb:50:in `authenticate_admin!'
+Started GET "/recursos/new" for 127.0.0.1 at 2024-09-17 18:41:47 -0600
+Processing by RecursosController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering recursos/new.html.erb within layouts/application
+  Rendered recursos/new.html.erb within layouts/application (Duration: 462.4ms | Allocations: 71078)
+  Rendered shared/_navbar.html.erb (Duration: 2.1ms | Allocations: 607)
+  Rendered shared/_language_menu.html.erb (Duration: 1.2ms | Allocations: 293)
+  Rendered shared/_footer.html.erb (Duration: 0.6ms | Allocations: 106)
+  Rendered layout layouts/application.html.erb (Duration: 526.8ms | Allocations: 97223)
+Completed 200 OK in 578ms (Views: 531.1ms | ActiveRecord: 9.6ms | Allocations: 106272)
+
+

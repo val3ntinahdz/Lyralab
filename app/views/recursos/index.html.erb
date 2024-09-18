@@ -1,0 +1,10 @@
+<h1>Recursos STEAM</h1>
+
+<%= Recurso::CATEGORIES.each do |categoria| %>
+  <h2><%= categoria %></h2>
+  <ul>
+    <% Recurso.where(categoria: categoria).each do |resource| %>
+      <li><%= link_to resource.title, resource %></li>
+    <% end %>
+  </ul>
+<% end %>

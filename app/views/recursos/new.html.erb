@@ -1,0 +1,9 @@
+<h1>Nuevo Recurso</h1>
+
+<%= simple_form_for @recurso do |f| %>
+  <%= f.input :titulo %>
+  <%= f.input :categoria, collection: Recurso::CATEGORIES %>
+  <%= f.input :descripcion %>
+  <%= f.input :url %>
+  <%= f.button :submit %>
+<%end %>

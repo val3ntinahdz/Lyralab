@@ -1,0 +1,52 @@
+class RecursosController < ApplicationController
+  # before_action :authenticate_admin!, only: [:new, :create, :edit, :update, :destroy]
+  before_action :set_resource, only: [:show, :edit, :update, :destroy]
+
+  def index
+    @recursos = Recurso.all
+  end
+
+  def show
+    @recurso = Recurso.find(params[:id])
+  end
+
+  def new
+    @recurso = Recurso.new
+  end
+
+  def create
+    @recurso = Recurso.create(resource_params)
+    if @recurso.save
+      redirect_to @recurso, notice: "Resource created succssfully"
+    else
+      render :new
+    end
+  end
+
+  def update
+    if @recurso.update(resource_params)
+      redirect_to @recurso, notice: "Resource updated succssfully"
+    else
+      render :edit
+    end
+  end
+
+  def destroy
+    @recurso.destroy
+    redirect_to recursos_path, notice: "Resource deleted succssfully"
+  end
+
+  private
+
+  def resource_params
+    params.require(:recurso).permit(:titulo, :categoria, :url, :descripcion)
+  end
+
+  def set_resource
+    @recurso = Recurso.find(params[:id])
+  end
+
+  # def authenticate_admin!
+  #   redirect_to root_path unless current_user.admin?
+  # end
+end
