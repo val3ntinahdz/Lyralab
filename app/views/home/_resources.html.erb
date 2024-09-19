@@ -1,15 +1,9 @@
-<div class="section-container" id="resources">
-  <div class="resources-header">
-    <h2>Blog y Recursos</h2>
-    <p class="lyra-description">Artículos, tutoriales y recursos sobre las últimas tendencias en el mundo STEAM. </p>
-  </div>
-
-  <div class="resource-card">
-  </div>
-
-  <div class="resource-card">
-  </div>
-
-  <div class="resource-card">
+<div data-controller="scroll">
+  <div data-scroll-target="section" class="section-container" id="resources">
+    <section>
+      <h2 class="section-title">Blog y Recursos</h2>
+      <p class="lyra-description">En nuestro blog encontrarás contenido interesante y recursos prácticos que te ayudarán a potencializar tu carrera.</p>
+      <%= link_to 'Ver Recursos', recursos_path, class: 'resources-button' %>
+    </section>
   </div>
 <div>

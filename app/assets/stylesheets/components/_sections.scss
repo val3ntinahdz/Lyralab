@@ -94,3 +94,42 @@
   border-radius: 9%;
   margin-bottom: 10px;
 }
+
+.sdg-container {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+
+  .sdg-title-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0;
+  }
+
+  .sdgs {
+    display: flex;
+    justify-content: center;
+    margin-top: 0;
+
+    .sdg-img {
+      width: 100px;
+      height: 100px;
+      margin: 0 10px;
+    }
+
+    .sdg {
+      margin: 0 10px;
+    }
+
+    img {
+      width: 150px;
+      height: 150px;
+    }
+  }
+}
+
+.sdg-container.visible {
+  opacity: 1;
+  transform: translateY(0);
+}

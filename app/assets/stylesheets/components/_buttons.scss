@@ -9,9 +9,34 @@
   border-radius: 15px;
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.3s ease;
+  &:hover {
+    background-color: $hover-color;
+    transform: scale(1.05);
+  }
 }
 
-.start-button:hover {
-  background-color: $hover-color;
-  transform: scale(1.05);
+
+.resources-button {
+  font-family: 'DM Sans', sans-serif;
+  letter-spacing: -1px;
+  background: linear-gradient(
+    0deg,
+    $highlight-color 0%,
+    rgb(179, 131, 233) 100%
+  );
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px 20px;
+  // border: 1px solid $button-border-color;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  text-decoration: none;
+
+  &:hover {
+    color: white;
+    transform: scale(1.05);
+  }
 }
