@@ -46,7 +46,7 @@ class RecursosController < ApplicationController
   private
 
   def resource_params
-    params.require(:recurso).permit(:titulo, :url, :descripcion, :category_id)
+    params.require(:recurso).permit(:titulo, :url, :descripcion, :category_id, :image)
   end
 
   def set_resource

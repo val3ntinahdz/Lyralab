@@ -1,14 +1,21 @@
-<h1>Recursos STEAM</h1>
+<div class="resources-container">
+  <div class="resources-title">
+    <h1>Recursos STEAM</h1>
+  </div>
+  <div class="filter">
+    <div class="filter-form">
+      <%= form_with url: recursos_path, method: :get, local: true do |f| %>
+        <%= f.collection_select :category_id, Category.all, :id, :name, prompt: "Filtrar por categoría" %>
+        <%= f.submit "Filtrar", class: "btn btn-primary" %>
+      <% end %>
+    </div>
+  </div>
 
-<%= form_with url: recursos_path, method: :get do |f| %>
-  <%= select_tag :category_id, options_from_collection_for_select(Category.all, :id, :name, params[:category_id]), prompt: "Selecciona una categoría" %>
-  <%= f.submit "Filtrar" %>
-<% end %>
-
-
-<% @recursos.each do |recurso| %>
-  <h3><%= recurso.titulo %></h3>
-  <p><%= recurso.descripcion %></p>
-  <p>Categoria: <%= recurso.category.name %></p>
-  <p><%= recurso.url %></p>
-<% end %>
+  <% unless @recursos.empty? %>
+    <%= render 'recursos' %>
+  <% else %>
+    <div class="filter-results mt-5">
+      <p class="text-muted">No Results Found :(</p>
+    </div>
+  <% end %>
+</div>

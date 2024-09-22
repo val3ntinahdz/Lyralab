@@ -1,0 +1,22 @@
+<div class="filter-results mt-5">
+  <div class="row">
+    <% @recursos.each do |recurso| %>
+      <div class="resource-card">
+        <div class="col-md-4">
+          <div class="col-mb-4">
+            <% if recurso.image.attached? %>
+              <%= image_tag recurso.image, class: "img-fluid" %>
+            <%end %>
+            <div class="card-body">
+              <h6><%= recurso.titulo %></h6>
+              <p><%= recurso.descripcion %></p>
+              <p>Categoria: <%= recurso.category.name %></p>
+              <p><%= recurso.url %></p>
+              <a href="<%= recurso.url %>" class="btn btn-primary" target="_blank">Ver Recurso</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
