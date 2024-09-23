@@ -15,26 +15,10 @@
   transform: translateY(0);
 }
 
-// .services {
-//   display: flex;
-//   justify-content: space-around;
-//   margin-top: 20px;
-// }
-
-// .service {
-//   text-align: center;
-//   max-width: 100px;
-// }
-
-// .service i {
-//   font-size: 35px;
-//   color: $service-icon-color;
-//   margin-bottom: 10px;
-// }
-
 .lyra-founder {
   font-size: 22px;
-  font-family: "Quicksand", sans-serif;
+  font-family: "DM Sans", sans-serif;
+  letter-spacing: -1px;
   font-weight: bolder;
   color: $founder-text-color;
   margin: 10px 0;
@@ -96,16 +80,12 @@
 }
 
 .sdg-container {
-  display: grid;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-
-  .sdg-title-img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 0;
-  }
+  padding: 35px;
+  margin-top: 10px;
 
   .sdgs {
     display: flex;
@@ -120,6 +100,7 @@
 
     .sdg {
       margin: 0 10px;
+      margin-top: -10px;
     }
 
     img {
@@ -129,7 +110,9 @@
   }
 }
 
-.sdg-container.visible {
-  opacity: 1;
-  transform: translateY(0);
+.sdg-title-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
 }
