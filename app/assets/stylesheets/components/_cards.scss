@@ -1,14 +1,64 @@
-.resource-card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 190px;
-  height: 254px;
-  padding: 1rem;
-  margin-top: 15px;
-  border-radius: 0.5rem;
-  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.1);
-  background-color: white;
-  transition: box-shadow 0.2s ease-in-out;
+.results-grid {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 25px;
+  align-items: stretch;
+
+  .resource-card {
+    // padding: 1rem;
+    margin-top: 15px;
+    border-radius: 17px;
+    // transition: box-shadow 0.2s ease-in-out;
+    transition: all 0.5s;
+    backdrop-filter: blur(1px);
+    background: rgba(217, 217, 217, 0.58);
+    border: 1px solid white;
+    box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+
+    &:hover {
+      border: 1px solid black;
+      transform: scale(1.05);
+    }
+
+    .resource-img {
+      max-width: 100%;
+      overflow: hidden;
+      border-radius: 17px 17px 0 0;
+    }
+
+    .card-body {
+      font-family: 'DM Sans', sans-serif;
+      letter-spacing: -0.5px;
+      padding: 0 15px 15px;
+      text-align: left;
+      margin-top: 11px;
+    }
+
+    .btn-recurso {
+      font-family: 'DM Sans', sans-serif;
+      letter-spacing: -1px;
+      background: linear-gradient(
+        0deg,
+        $highlight-color 0%,
+        #5c41f2 100%
+      );
+      color: white;
+      font-size: 13px;
+      font-weight: bold;
+      padding: 10px 20px;
+      // border: 1px solid $button-border-color;
+      border: none;
+      border-radius: 15px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+      text-decoration: none;
+      width: 100%;
+
+      &:hover {
+        color: white;
+        transform: scale(1.05);
+      }
+    }
+  }
 }

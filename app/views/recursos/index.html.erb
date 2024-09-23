@@ -1,8 +1,8 @@
 <div class="resources-container">
-  <div class="resources-title">
-    <h1>Recursos STEAM</h1>
-  </div>
-  <div class="filter">
+  <div class="resources-header">
+    <h1 class="resources-title">Recursos</h1>
+    <p class="resources-description">Encuentra recursos para aprender a programar, diseñar, marketing, etc.</p>
+
     <div class="filter-form">
       <%= form_with url: recursos_path, method: :get, local: true do |f| %>
         <%= f.collection_select :category_id, Category.all, :id, :name, prompt: "Filtrar por categoría" %>
