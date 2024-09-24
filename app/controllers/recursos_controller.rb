@@ -6,8 +6,9 @@ class RecursosController < ApplicationController
     @categories = Category.all
 
     if params[:category_id].present?
-      @category = Category.find(params[:category_id])
-      @recursos = @category.recursos
+      # @category = Category.find(params[:category_id])
+      # @recursos = @category.recursos
+      @recursos = Recurso.where(category_id: params[category_id])
     else
       @recursos = Recurso.all
     end
