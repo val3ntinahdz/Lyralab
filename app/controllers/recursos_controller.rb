@@ -11,6 +11,10 @@ class RecursosController < ApplicationController
     else
       @recursos = Recurso.all
     end
+
+    if params[:query].present?
+      @recursos = @recursos.where("titulo LIKE ?", "%#{params[:query].downcase}%")
+    end
   end
 
   def show
