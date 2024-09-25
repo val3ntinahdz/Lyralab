@@ -5,6 +5,6 @@ export default class extends Controller {
   static targets = ["tab", "content"]
 
   connect() {
-  
+    console.log("Add Dynamism to your filters!")
   }
 }

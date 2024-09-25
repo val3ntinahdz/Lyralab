@@ -1,36 +1,49 @@
 <div class="resources-container">
   <div class="resources-header">
-    <h1 class="resources-title">Recursos</h1>
-    <p class="resources-description">Encuentra recursos para aprender a programar, diseñar, marketing, etc.</p>
-
-    <div class="filter-form">
-      <%= form_with url: recursos_path, method: :get, local: true do |f| %>
-        <%= f.collection_select :category_id, Category.all, :id, :name, prompt: "Filtrar por categoría" %>
-        <%= f.submit "Filtrar", class: "btn btn-primary" %>
-      <% end %>
-    </div>
+    <h1 class="resources-title">The Curated Lyralab Library</h1>
+    <p class="resources-description">Encuentra recursos para aprender en las áreas STEAM: Ciencia, Tecnología, Ingeniería, Arte y Matemáticas.</p>
   </div>
 
   <div class="tabs">
-    <ul class="nav nav-tabs" id="myTab" role="tablist">
+    <ul class="nav nav-tabs" id="steamTab" role="tablist">
       <li class="nav-item">
         <a class="nav-link active" id="all-tab" data-bs-toggle="tab" data-bs-target="#all" role="tab" aria-controls="all" aria-selected="true">Todos</a>
       </li>
-      <% @categories.each do |category| %>
+      <% @steam_areas.each do |area| %>
         <li class="nav-item">
-          <a class="nav-link" id="<%= category.name.downcase %>-tab" data-bs-toggle="tab" data-bs-target="#<%= category.name.downcase %>" role="tab" aria-controls="<%= category.name.downcase %>" aria-selected="false"><%= category.name %></a>
+          <a class="nav-link" id="<%= area.downcase %>-tab" data-bs-toggle="tab" data-bs-target="#<%= area.downcase %>" role="tab" aria-controls="<%= area.downcase %>" aria-selected="false"><%= area %></a>
         </li>
       <% end %>
     </ul>
 
-    <!-- Contenido de los recursos -->
     <div class="tab-content">
       <div class="tab-pane fade show active" id="all" role="tabpanel" aria-labelledby="all-tab">
-        <%= render 'recursos', resources: @recursos %> <!-- Muestra todos los recursos -->
+        <%= render 'recursos', resources: @resources %>
       </div>
-      <% @categories.each do |category| %>
-        <div class="tab-pane fade" id="<%= category.name.downcase %>" role="tabpanel" aria-labelledby="<%= category.name.downcase %>-tab">
-          <%= render 'recursos', resources: @recursos.where(category_id: category.id) %> <!-- Filtra recursos por categoría -->
+
+      <% @steam_areas.each do |area| %>
+        <div class="tab-pane fade" id="<%= area.downcase %>" role="tabpanel" aria-labelledby="<%= area.downcase %>-tab">
+          <h2><%= area %></h2>
+
+          <div class="resource-group">
+            <h3>Artículos</h3>
+            <%= render 'recursos', resources: @resources.where(steam_area: area, resource_type: 'Artículo') %>
+          </div>
+
+          <div class="resource-group">
+            <h3>Videos</h3>
+            <%= render 'recursos', resources: @resources.where(steam_area: area, resource_type: 'Vídeo') %>
+          </div>
+
+          <div class="resource-group">
+            <h3>Libros/PDFs</h3>
+            <%= render 'recursos', resources: @resources.where(steam_area: area, resource_type: 'PDF') %>
+          </div>
+
+          <div class="resource-group">
+            <h3>Cursos recomendados</h3>
+            <%= render 'recursos', resources: @resources.where(steam_area: area, resource_type: 'Curso') %>
+          </div>
         </div>
       <% end %>
     </div>
