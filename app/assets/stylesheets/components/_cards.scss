@@ -1,7 +1,7 @@
 .results-grid {
-  margin-top: 1rem;
+  margin: 20px;
   display: grid;
-  grid-template-columns: repeat(3, minmax(200px, 1fr));
+  grid-template-columns: repeat(4, minmax(200px, 1fr));
   grid-gap: 25px;
   align-items: stretch;
 
