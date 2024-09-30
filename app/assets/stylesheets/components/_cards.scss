@@ -8,7 +8,7 @@
   .resource-card {
     // padding: 1rem;
     width: 250px;
-    height: 450px;
+    height: 400px;
     margin-top: 15px;
     border-radius: 17px;
     // transition: box-shadow 0.2s ease-in-out;
@@ -24,9 +24,12 @@
     }
 
     .resource-img {
-      max-width: 100%;
-      overflow: hidden;
+      width: 100%;
+      height: 15vw;
+      object-fit: cover;
+      // ajustar la imagen a la card
       border-radius: 17px 17px 0 0;
+      overflow: hidden;
     }
 
     .card-body {

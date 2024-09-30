@@ -6,11 +6,11 @@
   <div class="tabs">
     <ul class="nav nav-tabs" id="steamTab" role="tablist">
       <li class="nav-item">
-        <a class="nav-link active" id="all-tab" data-bs-toggle="tab" data-bs-target="#all" role="tab" aria-controls="all" aria-selected="true">Todos</a>
+        <a class="nav-link active steam-area" id="all-tab" data-bs-toggle="tab" data-bs-target="#all" role="tab" aria-controls="all" aria-selected="true">Todos</a>
       </li>
       <% @steam_areas.each do |area| %>
         <li class="nav-item">
-          <a class="nav-link" id="<%= area.downcase %>-tab" data-bs-toggle="tab" data-bs-target="#<%= area.downcase %>" role="tab" aria-controls="<%= area.downcase %>" aria-selected="false"><%= area %></a>
+          <a class="nav-link steam-area" id="<%= area.downcase %>-tab" data-bs-toggle="tab" data-bs-target="#<%= area.downcase %>" role="tab" aria-controls="<%= area.downcase %>" aria-selected="false"><%= area %></a>
         </li>
       <% end %>
     </ul>
