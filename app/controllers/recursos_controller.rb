@@ -4,17 +4,16 @@ class RecursosController < ApplicationController
 
   def index
     @categories = Category.all
+    @steam_areas = %w[ Ciencia Tecnología Ingeniería Arte Matemáticas ]
 
-    if params[:category_id].present?
-      # @category = Category.find(params[:category_id])
-      # @recursos = @category.recursos
-      @recursos = Recurso.where(category_id: params[category_id])
+    if params[:category_id].present? &&
+      @resources = Recurso.where(category_id: params[category_id])
     else
-      @recursos = Recurso.all
+      @resources = Recurso.all
     end
 
     if params[:query].present?
-      @recursos = @recursos.where("titulo LIKE ?", "%#{params[:query].downcase}%")
+      @resources = @resources.where("titulo LIKE ?", "%#{params[:query].downcase}%")
     end
   end
 
@@ -51,7 +50,7 @@ class RecursosController < ApplicationController
   private
 
   def resource_params
-    params.require(:recurso).permit(:titulo, :url, :descripcion, :category_id, :image)
+    params.require(:recurso).permit(:titulo, :url, :descripcion, :steam_area, :category_id, :image, :resource_type)
   end
 
   def set_resource

@@ -3,12 +3,14 @@
     <div class="resource-card">
       <% if recurso.image.attached? %>
         <%= image_tag recurso.image, class: "resource-img" %>
+      <% else %>
+        <%= image_tag "default.jpg", class: "resource-img" %>
       <% end %>
       <div class="card-body">
         <h6><%= recurso.titulo %></h6>
-        <p><%= truncate(recurso.descripcion, length: 100) %></p>
+        <p><%= truncate(recurso.descripcion, length: 50, omission: "...") %></p>
         <p><%= recurso.category.name %></p>
-        <a href="<%= recurso.url %>" class="btn-recurso" target="_blank">Leer Más</a>
+        <a href="<%= recurso.url %>" class="btn-recurso" target="_blank">Ver Más</a>
       </div>
     </div>
   <% end %>
