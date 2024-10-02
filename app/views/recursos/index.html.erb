@@ -1,7 +1,18 @@
 <div class="resources-header">
   <h1 class="resources-title">The Curated Lyralab Library</h1>
   <p class="resources-description">Encuentra recursos para aprender en las áreas STEAM: Ciencia, Tecnología, Ingeniería, Arte y Matemáticas.</p>
+  <div class="search-bar mt-2">
+    <%= form_with url: recursos_path, method: :get, class: "d-flex" do %>
+      <%= text_field_tag :query,
+            params[:query],
+            class: "form-control",
+            placeholder: "Type a keyword"
+        %>
+      <%= submit_tag "Search", name: "", class: "btn btn-primary" %>
+    <% end %>
+  </div>
 </div>
+
 <div class="resources-container">
   <div class="tabs">
     <ul class="nav nav-tabs" id="steamTab" role="tablist">

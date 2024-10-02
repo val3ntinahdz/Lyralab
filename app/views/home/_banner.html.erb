@@ -1,8 +1,8 @@
 <div class="banner-container">
-    <div class="banner-text">
-        <h1 class="banner-title mt-3 align-content-center"><%= t('lyralab.banner_title').html_safe %>,</h1>
-        <p class="slogan"><%= t('lyralab.banner_description') %></p>
-        <button class="start-button mt-2" data-toggle="modal" data-target="#joinModal"><%= t('lyralab.buttons.join') %></button>
-    </div>
-    <%= image_tag 'lab.png', alt: 'lyralab', class: 'cuate-image' %>
+  <%= image_tag 'lab.png', alt: 'lyralab', class: 'banner-img' %>
+  <div class="banner-text">
+    <h1 class="banner-title mt-3 align-content-center"><%= t('lyralab.banner_title').html_safe %>,</h1>
+    <p class="slogan"><%= t('lyralab.banner_description') %></p>
+    <button class="start-button mt-2" data-toggle="modal" data-target="#joinModal"><%= t('lyralab.buttons.join') %></button>
+  </div>
 </div>

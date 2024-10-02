@@ -1,26 +1,31 @@
 .banner-container {
   display: flex;
   align-items: center;
-  justify-content: center;
-  padding: 100px;
-  margin-left: 7%;
-}
+  justify-content: flex-start;
+  padding: 50px;
 
-.banner-title {
-  font-family: "Playfair Display", serif;
-  font-size: 60px;
-  margin-bottom: 10px;
-  font-style: italic;
-}
+  .banner-title {
+    font-family: "Playfair Display", serif;
+    font-size: 60px;
+    margin-bottom: 10px;
+    font-style: italic;
+  }
 
-.banner-title span {
-  text-decoration: underline;
-  text-decoration-color: $primary-color;
-}
+  .banner-title span {
+    text-decoration: underline;
+    text-decoration-color: $primary-color;
+  }
 
-.slogan {
-  font-size: 30px;
-  font-family: "Quicksand", sans-serif;
-  margin-bottom: 20px;
-  font-weight: bold;
+  .slogan {
+    font-size: 30px;
+    font-family: "Quicksand", sans-serif;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+
+  .banner-img {
+    width: 50%;
+    height: 50%;
+    margin-left: 0;
+  }
 }
