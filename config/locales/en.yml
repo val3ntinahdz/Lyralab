@@ -30,8 +30,8 @@
 en:
   hello: "Hello world"
   lyralab:
-    banner_title: "Explore Opportunities in <span>STEAM</span>"
-    banner_description: "learn from experts and connect with a passionate community."
+    banner_title: "Explore the <span>STEAM</span> world"
+    banner_description: "by learning new skills in a creative and fun way."
     about_1:
       title: "A Technological and Artistic Approach: LyraLab"
       description: "At LyraLab, we are dedicated to promoting education in Science, Technology, Engineering, Arts, and Mathematics (STEAM) by developing original resources and practical tools for young people. Our vision is to offer a dynamic learning space through workshops, webinars, courses, and other interactive tools."
