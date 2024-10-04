@@ -53,9 +53,25 @@
 .founders-container {
   display: flex;
   justify-content: space-around;
+  position: relative;
   margin-top: 0;
   padding: 25px;
   background-color: #131225;
+}
+
+#planet {
+  position: absolute;
+  margin: 0 10px;
+
+  img {
+    z-index: 1;
+    width: 350px;
+    height: 200px;
+    top: 190px;
+    left: 270px;
+    position: absolute;
+    rotate: -10deg;
+  }
 }
 
 .founder {
