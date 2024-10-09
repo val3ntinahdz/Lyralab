@@ -1,15 +1,16 @@
 .results-grid {
-  margin: 20px;
+  max-width: 100%;
   display: grid;
-  grid-template-columns: repeat(4, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
   grid-gap: 25px;
   align-items: stretch;
 
   .resource-card {
     // padding: 1rem;
-    width: 250px;
-    height: 400px;
-    margin-top: 15px;
+    width: 100%; /* Se adapta al tamaño de la columna */
+    max-width: 250px;
+    height: 350px;
+    margin-top: 25px;
     border-radius: 17px;
     // transition: box-shadow 0.2s ease-in-out;
     transition: all 0.5s;
@@ -17,6 +18,7 @@
     background: rgba(217, 217, 217, 0.58);
     border: 1px solid white;
     box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+    overflow: hidden;
 
     &:hover {
       border: 1px solid black;
@@ -69,15 +71,17 @@
 }
 
 .position-card-container {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  //separar cards
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(300px, 1fr));
+  grid-gap: 25px;
+  align-items: stretch;
 
   .position-card {
     width: 300px;
-    height: 250px;
+    display: flex;
+    flex-direction: column; // Flexbox coloca los elementos en una columna
+    justify-content: space-between;
+    height: 300px;
     margin-top: 15px;
     background-color: rgb(236, 240, 237);
     border: 1px solid rgb(0, 0, 0);

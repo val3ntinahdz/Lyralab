@@ -2,13 +2,11 @@
   <h1 class="resources-title">The Curated Lyralab Library</h1>
   <p class="resources-description">Ready to level up your STEAM skills? Dive into our handpicked resources!</p>
   <div class="search-bar mt-2">
-    <%= form_with url: recursos_path, method: :get, class: "d-flex" do %>
-      <%= text_field_tag :query,
-            params[:query],
-            class: "form-control",
-            placeholder: "Search by title, category, or description"
-        %>
-      <%= submit_tag "Search", name: "", class: "btn btn-primary" %>
+    <%= form_with url: recursos_path, method: :get, class: "d-flex align-items-center" do %>
+      <%= text_field_tag :query, params[:query], class: "search-bar" %>
+      <button type="submit" class="btn-search">
+        <i class="fas fa-search"></i>
+      </button>
     <% end %>
   </div>
 </div>
