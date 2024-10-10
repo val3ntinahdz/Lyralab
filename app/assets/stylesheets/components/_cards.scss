@@ -119,5 +119,16 @@
       left: 150px;
     }
   }
+}
 
+// media queries
+@media (max-width: 768px) {
+  .results-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+
+  .position-card-container {
+    gap: 10px;
+    padding: 10px 0;
+  }
 }
