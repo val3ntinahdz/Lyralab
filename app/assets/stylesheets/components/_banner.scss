@@ -34,6 +34,8 @@
   background-color: #756dea;
   max-width: 100%;
   padding: 0 20px; /* Un poco de espacio a los lados */
+  box-sizing: border-box; /* Asegura que padding no expanda el banner */
+  margin-bottom: 20px;
 
   .recommendation-title {
     font-family: "League Spartan", sans-serif;

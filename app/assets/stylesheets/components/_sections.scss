@@ -174,13 +174,14 @@
 
   .sdg-container {
     padding: 20px;
+    box-sizing: border-box;
   }
 
   .sdg-title-img {
     margin-top: 20px;
     #sdg-img {
-      width: 430px;
-      height: 100px;
+      width: 400px;
+      height: 90px;
     }
   }
 
