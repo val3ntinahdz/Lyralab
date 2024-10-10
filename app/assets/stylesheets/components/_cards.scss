@@ -71,18 +71,22 @@
 }
 
 .position-card-container {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(300px, 1fr));
-  grid-gap: 25px;
-  align-items: stretch;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto; /* Hacer que el scroll sea horizontal */
+  scroll-snap-type: x mandatory; /* Hacer que el scroll enganche en cada tarjeta */
+  scroll-behavior: smooth; /* Animación suave al desplazarse */
+  gap: 15px; /* Espacio entre las tarjetas */
+  padding: 10px 0;
 
   .position-card {
-    width: 300px;
+    max-width: 300px;
+    scroll-snap-align: center; /* Hacer que el scroll enganche en cada tarjeta */
     display: flex;
+    flex-shrink: 0;
     flex-direction: column; // Flexbox coloca los elementos en una columna
     justify-content: space-between;
     height: 300px;
-    margin-top: 15px;
     background-color: rgb(236, 240, 237);
     border: 1px solid rgb(0, 0, 0);
     border-radius: 17px;
