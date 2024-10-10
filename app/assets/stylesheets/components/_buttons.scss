@@ -40,3 +40,25 @@
     transform: scale(1.05) !important;
   }
 }
+
+.btn-recommendation {
+  font-family: 'DM Sans', sans-serif;
+  letter-spacing: -1px;
+  background: none;
+  color: #756dea;
+  font-size: 17px;
+  border: 1px solid #756dea;
+  padding: 10px 20px;
+  border-radius: 15px;
+  cursor: pointer;
+  text-decoration: none;
+  width: 100%;
+  margin-top: auto;
+  text-align: center;
+
+  &:hover {
+    background: #756dea;
+    color: white;
+    transition: background-color 0.3s ease;
+  }
+}

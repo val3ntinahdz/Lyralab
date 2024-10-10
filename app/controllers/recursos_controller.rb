@@ -13,7 +13,7 @@ class RecursosController < ApplicationController
     end
 
     if params[:query].present?
-      sql_subquery = "titulo LIKE :query OR descripcion LIKE :query OR resource_type LIKE :query OR steam_area LIKE :query OR id IN (SELECT category_id FROM categories WHERE name LIKE :query)"
+      sql_subquery = "titulo LIKE :query OR descripcion LIKE :query OR resource_type LIKE :query OR steam_area"
       @resources = @resources.where(sql_subquery, query: "%#{params[:query]}%")
     end
   end

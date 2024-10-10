@@ -24,11 +24,10 @@
 }
 
 .resources-container {
-  margin: 30px;
-  width: 100%;
-  display: grid;
-  padding: 25px;
-
+  display: flex;
+  flex-direction: column;
+  margin: 28px;
+  padding: 20px 0;
 
   .steam-area {
     color: rgb(14, 13, 13), 8, 8;
