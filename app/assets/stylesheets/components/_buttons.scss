@@ -41,6 +41,30 @@
   }
 }
 
+.card-btn {
+  font-family: 'DM Sans', sans-serif;
+  letter-spacing: -1px;
+  background: linear-gradient(
+    0deg,
+    $highlight-color 0%,
+    #2d2fba 100%
+  );
+  color: white;
+  font-size: 17px;
+  padding: 10px 20px;
+  border-radius: 15px;
+  text-decoration: none;
+  width: 100%;
+  margin-top: auto; // Para que el botón se alinee en la parte inferior
+  text-align: center;
+  display: block; // Para que el botón ocupe todo el ancho del contenedor
+
+  &:hover {
+    background: #3638cd;
+    color: white;
+  }
+}
+
 .btn-recommendation {
   font-family: 'DM Sans', sans-serif;
   letter-spacing: -1px;

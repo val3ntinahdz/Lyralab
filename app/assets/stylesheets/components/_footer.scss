@@ -1,12 +1,17 @@
-footer {
-  background-color: #7f40f4;
-  padding: 20px;
-  text-align: center;
+.footer-container {
+  width: 100% !important;
   display: flex;
-  justify-content: space-between;
-  border-top: 1px solid #ddd;
-  position: sticky;
-  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  background-color: #e6e2e2; /* Adjust this to match your footer color */
+  padding: 10px;
+  text-align: center;
+  position: relative !important; /* Se mantiene relativo al flujo del documento */
+  bottom: 0;
 }
 
 .col {

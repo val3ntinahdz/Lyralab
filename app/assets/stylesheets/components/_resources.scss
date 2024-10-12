@@ -1,27 +1,46 @@
 .resources-header {
-  background: #4d33e0;
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  margin: 0 0 20px 0;
   padding: 30px 0;
 
-  .resources-title {
-    font-family: "Playfair Display", serif;
-    letter-spacing: -0.5px;
-    font-size: 30px;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    color: white;
+  .r-header {
+    display: flex;
+    flex-direction: column;
+    margin: 0 50px;
+    position: relative;
+
+    .resources-title {
+      font-family: "Playfair Display", serif;
+      letter-spacing: -0.5px;
+      font-size: 50px;
+      margin-top: 20px;
+      margin-bottom: 10px;
+      color: rgb(0, 0, 0);
+      font-weight: 200;
+    }
+
+    .resources-description {
+      font-family: "League Spartan", sans-serif;
+      font-size: 20px;
+      color: rgb(0, 0, 0);
+
+      #span {
+        text-decoration: underline;
+        text-decoration-color: #ffd500;
+      }
+    }
   }
 
-  .resources-description {
-    font-family: "League Spartan", sans-serif;
-    font-size: 16px;
-    color: white;
+  .resources-img {
+    position: absolute;
+    left: 800px;
+    width: 400px;
+    height: auto;
+    margin-top: 70px;
   }
 }
+
 
 .resources-container {
   display: flex;
