@@ -48,14 +48,4 @@ Recurso.create!(
   image: File.open(Rails.root.join("app/assets/images/default.jpg"))
 )
 
-Recurso.create!(
-  titulo: "Razonamiento Lógic Matemático",
-  descripcion: "Los mejores 300 ejercicios de razonamiento lógico matemático a nivel Secundaria",
-  url: "file:///C:/Users/leonh/Downloads/razonamiento-logico-matematico-para-secundaria-me.pdf",
-  category_id: 2,
-  steam_area: "Tecnología",
-  resource_type: "Curso",
-  image: File.open(Rails.root.join("app/assets/images/default.jpg"))
-)
-
 puts "Se crearon #{Recurso.count} recursos."
