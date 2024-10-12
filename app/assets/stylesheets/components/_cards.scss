@@ -1,12 +1,10 @@
 .results-grid {
   max-width: 100%;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  grid-template-columns: repeat(5, minmax(160px, 1fr));
   grid-gap: 25px;
-  align-items: stretch;
 
   .resource-card {
-    // padding: 1rem;
     width: 100%; /* Se adapta al tamaño de la columna */
     max-width: 250px;
     height: 350px;
@@ -14,11 +12,10 @@
     border-radius: 17px;
     // transition: box-shadow 0.2s ease-in-out;
     transition: all 0.5s;
-    backdrop-filter: blur(1px);
+    // backdrop-filter: blur(0.5px);
     background: rgba(217, 217, 217, 0.58);
     border: 1px solid white;
     box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
-    overflow: hidden;
 
     &:hover {
       border: 1px solid black;
@@ -40,32 +37,6 @@
       padding: 0 15px 15px;
       text-align: left;
       margin-top: 11px;
-    }
-
-    .btn-recurso {
-      font-family: 'DM Sans', sans-serif;
-      letter-spacing: -1px;
-      background: linear-gradient(
-        0deg,
-        $highlight-color 0%,
-        #5c41f2 100%
-      );
-      color: white;
-      font-size: 13px;
-      font-weight: bold;
-      padding: 10px 20px;
-      // border: 1px solid $button-border-color;
-      border: none;
-      border-radius: 15px;
-      cursor: pointer;
-      transition: background-color 0.3s ease, transform 0.3s ease;
-      text-decoration: none;
-      width: 100%;
-
-      &:hover {
-        color: white;
-        transform: scale(1.05);
-      }
     }
   }
 }

@@ -30,10 +30,14 @@
   }
 }
 
-.recommendation-banner {
+#proposition {
+  display: grid;
+  // center
+  justify-content: center;
+  align-items: center;
   background-color: #756dea;
   max-width: 100%;
-  padding: 0 20px; /* Un poco de espacio a los lados */
+  padding: 15px 20px; /* Un poco de espacio a los lados */
   box-sizing: border-box; /* Asegura que padding no expanda el banner */
   margin-bottom: 20px;
 
@@ -44,6 +48,9 @@
     font-weight: bold;
     color: white;
     margin-top: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 13.5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }

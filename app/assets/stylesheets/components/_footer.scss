@@ -10,7 +10,7 @@ footer {
   background-color: #e6e2e2; /* Adjust this to match your footer color */
   padding: 10px;
   text-align: center;
-  position: relative; /* Se mantiene relativo al flujo del documento */
+  position: relative !important; /* Se mantiene relativo al flujo del documento */
   bottom: 0;
 }
 

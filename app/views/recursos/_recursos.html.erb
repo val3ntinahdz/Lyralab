@@ -8,9 +8,8 @@
       <% end %>
       <div class="card-body">
         <h6><%= recurso.titulo %></h6>
-        <p><%= truncate(recurso.descripcion, length: 50, omission: "...") %></p>
         <p><%= recurso.category.name %></p>
-        <a href="<%= recurso.url %>" class="btn-recurso" target="_blank">Ver Más</a>
+        <a href="<%= recurso.url %>" class="card-btn" target="_blank">Ver Más</a>
       </div>
     </div>
   <% end %>
