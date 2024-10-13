@@ -1,5 +1,14 @@
 es:
   hello: "Hola"
+  activerecord:
+    attributes:
+      contact:
+        name: "Nombre"
+        email: "Correo electrónico"
+        message: "Mensaje"
+  helpers:
+    submit:
+      contact: "Enviar"
   lyralab:
     banner_title: "Explora el mundo <span>STEAM</span>"
     banner_description: "aprendiendo nuevas habilidades de manera creativa y divertida."
@@ -15,15 +24,19 @@ es:
     buttons:
       join: "Únete Ahora"
       see-resources: "Ver Recursos"
+      see-more: "Ver Más"
     co-founders:
       vale: "Valentina León - Co-Fundadora"
       vale-description: "Estudiante apasionada de la Tecnología y la Educación. Desarrolladora de Software y Diseñadora Web."
       cinthya: "Cinthya Juárez - Co-Fundadora"
       cinthya-description: "Estudiante apasionada de la Ciencia y la Tecnología. Entusiasta de la Educación y la Innovación."
-    recursos:
+    resources:
       title: "Recursos"
       description: "Encontrarás recursos prácticos que te ayudarán a potencializar tu carrera."
-    cursos:
+    courses:
       title: "Cursos Recomendados"
+    contact:
+      title: "Contáctanos"
+      description: "¿Tienes alguna pregunta o sugerencia? ¡Escríbenos!"
   resources-page:
     description: "¿Listo para llevar tus habilidades STEAM al siguiente nivel? Échale un vistazo a nuestra librería curada!"

@@ -95,7 +95,7 @@
 }
 
 .contact-form {
-  max-width: 600px;
+  width: 600px;
   margin: 0 auto; /* Center the form on the page */
   padding: 20px;
   background-color: #f9f9f9;
@@ -138,9 +138,27 @@
     resize: vertical;
   }
 
-  @media (max-width: 600px) {
-    .contact-form {
-      padding: 15px;
+  .resources-button {
+    margin-top: 1rem;
+  }
+
+  @media (max-width: 768px) {
+    width: 100%;
+
+    .form-control {
+      width: 100%;
+    }
+
+    .form-label {
+      font-size: 1.1em;
+    }
+
+    .resources-button {
+      margin-top: 1rem;
+    }
+
+    .form-group {
+      margin-bottom: 0.5rem;
     }
   }
 }

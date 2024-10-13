@@ -199,3 +199,45 @@
     padding: 20px;
   }
 }
+
+#contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 35px;
+  margin: 30px;
+
+  .section-text {
+    font-family: "League Spartan", sans-serif;
+    font-size: 20px;
+    margin: 20px 0;
+    font-weight: 10px;
+  }
+
+  #form {
+    margin-left: 0;
+  }
+
+  a {
+    color: $primary-color;
+    text-decoration: none;
+    font-size: large;
+  }
+
+  .contact-img {
+    width: 400px;
+    height: auto;
+    margin-left: 20px;
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    padding: 20px;
+
+    .contact-img {
+      width: 300px;
+      height: auto;
+      margin-left: 0;
+    }
+  }
+}
