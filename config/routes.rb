@@ -11,4 +11,5 @@ Rails.application.routes.draw do
   # root "posts#index"
   root "home#index"
   resources :recursos
+  resources :contacts, only: [:new, :create]
 end

@@ -1,7 +1,7 @@
 <div class="resources-header">
   <div class="r-header">
     <h1 class="resources-title">The Lyra-Library</h1>
-    <p class="resources-description">Ready to level up your STEAM skills? Dive into our <span id="span">handpicked resources!</span></p>
+    <p class="resources-description"><%= t('resources-page.description') %></span></p>
     <div class="search-bar mt-2">
       <%= form_with url: recursos_path, method: :get, class: "d-flex align-items-center" do %>
         <%= text_field_tag :query, params[:query], class: "search-bar" %>

@@ -33,11 +33,8 @@
   }
 
   .resources-img {
-    position: absolute;
-    left: 800px;
-    width: 400px;
+    width: 450px;
     height: auto;
-    margin-top: 70px;
   }
 }
 
@@ -46,6 +43,7 @@
   display: flex;
   flex-direction: column;
   margin: 28px;
+  margin-top: 0 !important;
   padding: 20px 0;
 
   .steam-area {
@@ -80,4 +78,25 @@
 
 .resource-group {
   margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .resources-header {
+    flex-direction: column;
+    align-items: center;
+
+    .r-header {
+      margin: 0;
+      text-align: center;
+    }
+
+    .resources-img {
+      margin-top: 20px;
+    }
+  }
+
+  .resources-container {
+    margin: 10px;
+    padding: 0;
+  }
 }

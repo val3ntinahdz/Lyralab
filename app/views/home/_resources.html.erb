@@ -1,9 +1,9 @@
 <div data-controller="scroll">
   <div data-scroll-target="section" class="section-container" id="resources">
     <section>
-      <h2 class="section-title">Recursos</h2>
-      <p class="lyra-description">Encontrarás recursos prácticos que te ayudarán a potencializar tu carrera.</p>
-      <%= link_to 'Ver Recursos', recursos_path, class: 'resources-button' %>
+      <h2 class="section-title"><%= t('lyralab.resources.title') %></h2>
+      <p class="lyra-description"><%= t('lyralab.resources.description') %></p>
+      <%= link_to t('lyralab.buttons.see-resources'), recursos_path, class: 'resources-button' %>
     </section>
   </div>
 <div>
