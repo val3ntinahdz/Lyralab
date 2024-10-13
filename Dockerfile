@@ -26,6 +26,7 @@ RUN gem install bundler -v 2.5.17
 # Install packages needed to build gems
 RUN apt-get update -qq && \
     apt-get install --no-install-recommends -y build-essential git libvips pkg-config
+RUN apt-get update && apt-get install -y build-essential libffi-dev
 
 # Install application gems
 COPY Gemfile Gemfile.lock ./
