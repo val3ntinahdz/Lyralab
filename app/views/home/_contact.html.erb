@@ -1,8 +1,10 @@
 <div data-controller="scroll">
   <div data-scroll-target="section" class="section-container" id="contact">
     <section>
-      <h2 class="section-title">Contáctanos!</h2>
+      <h2 class="section-title"><%= t('lyralab.contact.title') %></h2>
+      <p class="section-text"><%= t('lyralab.contact.description') %></p>
+      <%= render 'contacts/contact_form' %>
     </section>
-    <%= render 'contacts/contact_form' %>
+    <%= image_tag 'contact.png', alt: 'lyralab', class: 'contact-img' %>
   </div>
 <div>

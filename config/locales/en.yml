@@ -29,6 +29,15 @@
 
 en:
   hello: "Hello world"
+  activerecord:
+    attributes:
+      contact:
+        name: "Name"
+        email: "Email"
+        message: "Message"
+  helpers:
+    submit:
+      contact: "Send"
   lyralab:
     banner_title: "Explore the <span>STEAM</span> world"
     banner_description: "by learning new skills in a creative and fun way."
@@ -44,6 +53,7 @@ en:
     buttons:
       join: "Join Now"
       see-resources: "See Resources"
+      see-more: "See More"
     co-founders:
       vale: "Valentina León - Co-Founder"
       vale-description: "Passionate student of Technology and Education. Software Developer and Web Designer."
@@ -54,5 +64,8 @@ en:
       description: "You will find practical resources that will help you enhance your career."
     courses:
       title: "Recommended Courses"
+    contact:
+      title: "Contact Us"
+      description: "Do you have any questions or suggestions? Write to us!"
   resources-page:
     description: "Ready to level up your STEAM skills? Dive into our handpicked resources!"

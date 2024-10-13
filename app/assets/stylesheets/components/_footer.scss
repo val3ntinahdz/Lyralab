@@ -4,10 +4,16 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  .text-dark {
+    color: #000;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1rem;
+  }
 }
 
 footer {
-  background-color: #e6e2e2; /* Adjust this to match your footer color */
+  background-color: #f1f0f0; /* Adjust this to match your footer color */
   padding: 10px;
   text-align: center;
   position: relative !important; /* Se mantiene relativo al flujo del documento */
@@ -20,10 +26,9 @@ footer {
 
 .social-icons {
   display: flex;  /* Arrange icons in a row */
-}
-
-.social-icons a {
-  color: #e6e2e2;
-  font-size: 20px;
-  margin: 0 10px;
+  .social-icons a {
+    color: #5c41f2 ;
+    font-size: 20px;
+    margin: 0 10px;
+  }
 }
