@@ -43,3 +43,16 @@ en:
       description: "We know that education must be inclusive and equitable, which is why we are committed to ensuring that all young people, regardless of gender, have access to educational opportunities in a fair and respectful environment. We foster equality, promote opportunities for all, and inspire full development without gender barriers."
     buttons:
       join: "Join Now"
+      see-resources: "See Resources"
+    co-founders:
+      vale: "Valentina León - Co-Founder"
+      vale-description: "Passionate student of Technology and Education. Software Developer and Web Designer."
+      cinthya: "Cinthya Juárez - Co-Founder"
+      cinthya-description: "Passionate student of Science and Technology. Enthusiast of Education and Innovation."
+    resources:
+      title: "Resources"
+      description: "You will find practical resources that will help you enhance your career."
+    courses:
+      title: "Recommended Courses"
+  resources-page:
+    description: "Ready to level up your STEAM skills? Dive into our handpicked resources!"
