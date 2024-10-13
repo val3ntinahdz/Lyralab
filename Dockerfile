@@ -38,9 +38,7 @@ RUN bundle install && \
 COPY . .
 
 # Install JS dependencies
-RUN yarn install --check-files
-# Install Node.js and Yarn for JS assets
-RUN apt-get install -y nodejs yarn
+RUN npm install
 
 # Precompile bootsnap code for faster boot times
 RUN bundle exec bootsnap precompile app/ lib/
