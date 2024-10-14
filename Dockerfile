@@ -17,16 +17,9 @@ ENV RAILS_ENV="production" \
 # Throw-away build stage to reduce size of final image
 FROM base as build
 
-# Update RubyGems to the required version
-RUN gem update --system 3.3.22
-
-# Install Bundler 2.5.17 (to match the lockfile)
-RUN gem install bundler -v 2.5.17
-
 # Install packages needed to build gems
 RUN apt-get update -qq && \
     apt-get install --no-install-recommends -y build-essential git libvips pkg-config
-RUN apt-get update && apt-get install -y build-essential libffi-dev
 
 # Install application gems
 COPY Gemfile Gemfile.lock ./
@@ -36,9 +29,6 @@ RUN bundle install && \
 
 # Copy application code
 COPY . .
-
-# Install Node.js and Yarn
-RUN apt-get install -y nodejs yarn
 
 # Precompile bootsnap code for faster boot times
 RUN bundle exec bootsnap precompile app/ lib/

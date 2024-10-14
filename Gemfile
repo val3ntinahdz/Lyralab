@@ -74,6 +74,3 @@ gem "font-awesome-sass", "~> 6.1"
 gem 'rails-i18n'
 gem "devise"
 gem "simple_form"
-
-gem 'execjs'
-gem 'ffi'
