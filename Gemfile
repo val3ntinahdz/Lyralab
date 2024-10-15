@@ -73,9 +73,10 @@ group :production do
   gem 'pg'
 end
 
-# gem 'sassc-rails'
+gem 'sassc-rails'
 gem 'bootstrap', '~> 5.3.3'
 gem "font-awesome-sass", "~> 6.1"
 gem 'rails-i18n'
 gem "devise"
 gem "simple_form"
+gem 'ffi', '~> 1.15.5'
