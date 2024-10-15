@@ -5,3 +5,4 @@
 //= link bootstrap.min.js
 //= link popper.js
 //= link application.css
+//= link_directory ../stylesheets .scss

@@ -97,5 +97,4 @@ Rails.application.configure do
   config.assets.compile = false
   config.assets.digest = true
   config.assets.compress = true
-  config.assets.css_compressor = :sass
 end
