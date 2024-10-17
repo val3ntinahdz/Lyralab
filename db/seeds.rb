@@ -150,14 +150,6 @@ Recurso.create!([
     resource_type: "Libro"
   },
   {
-    titulo: "Wolfram Alpha",
-    descripcion: "A powerful computation engine that helps with solving complex mathematics, plotting graphs, and much more.",
-    url: "https://www.wolframalpha.com/",
-    category_id: 2,
-    steam_area: "Matemáticas",
-    resource_type: "Herramienta"
-  },
-  {
     titulo: "Coursera: Machine Learning by Andrew Ng",
     descripcion: "One of the most popular and highly-rated machine learning courses taught by Stanford Professor Andrew Ng.",
     url: "https://www.coursera.org/learn/machine-learning",
@@ -180,6 +172,30 @@ Recurso.create!([
     category_id: 2,
     steam_area: "Tecnología",
     resource_type: "Herramienta"
+  },
+  {
+    titulo: "Historia del arte: del Barroco al Posmoderno",
+    descripcion: "Historia del arte: del Barroco al Posmoderno es un curso en línea de la Universidad Nacional Autónoma de México que te permitirá conocer las características y los principales exponentes de los movimientos artísticos del Barroco, Rococó, Neoclásico, Romanticismo, Realismo, Impresionismo, Modernismo, Vanguardias y Posmodernismo.",
+    url: "https://www.coursera.org/learn/historia-arte-barroco-posmoderno",
+    category_id: 3,
+    steam_area: "Arte",
+    resource_type: "Curso"
+  },
+  {
+    titulo: "Arte Contemporáneo",
+    descripcion: "Arte Contemporáneo es un curso en línea de la Universidad Nacional Autónoma de México que te permitirá conocer las características y los principales exponentes del arte contemporáneo.",
+    url: "https://www.coursera.org/learn/contemporary-art",
+    category_id: 3,
+    steam_area: "Arte",
+    resource_type: "Curso"
+  },
+  {
+    titulo: "Fundamentos del Design Thinking",
+    descripcion: "Fundamentos del Design Thinking es un curso en línea de la Universidad Nacional Autónoma de México que te permitirá conocer los fundamentos del Design Thinking y cómo aplicarlos en la sol",
+    url: "https://www.coursera.org/specializations/uva-darden-design-thinking",
+    category_id: 3,
+    steam_area: "Arte",
+    resource_type: "Curso"
   }
 ])
 
