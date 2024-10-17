@@ -45,11 +45,6 @@
   margin-top: auto;
   font-family: 'DM Sans', sans-serif;
   letter-spacing: -1px;
-  background: linear-gradient(
-    0deg,
-    $highlight-color 0%,
-    #2d2fba 100%
-  );
   color: white;
   font-size: 17px;
   padding: 10px 20px;
@@ -58,10 +53,45 @@
   width: 100%;
   text-align: center;
   display: block; // Para que el botón ocupe todo el ancho del contenedor
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 
   &:hover {
-    background: #3638cd;
     color: white;
+  }
+}
+
+.ciencia .card-btn {
+  background: linear-gradient(0deg, lighten(#00796b, 15%) 0%, #00796b 100%);
+  &:hover {
+    background: darken(#00796b, 10%);
+  }
+}
+
+.tecnologia .card-btn {
+  background: linear-gradient(0deg, lighten(#f57c00, 15%) 0%, #f57c00 100%);
+  &:hover {
+    background: darken(#f57c00, 10%);
+  }
+}
+
+.ingenieria .card-btn {
+  background: linear-gradient(0deg, lighten(#673ab7, 15%) 0%, #673ab7 100%);
+  &:hover {
+    background: darken(#673ab7, 10%);
+  }
+}
+
+.matematicas .card-btn {
+  background: linear-gradient(0deg, lighten(#388e3c, 15%) 0%, #388e3c 100%);
+  &:hover {
+    background: darken(#388e3c, 10%);
+  }
+}
+
+.arte .card-btn {
+  background: linear-gradient(0deg, lighten(#d84315, 15%) 0%, #d84315 100%);
+  &:hover {
+    background: darken(#d84315, 10%);
   }
 }
 

@@ -16,55 +16,12 @@
 
 
 <div class="resources-container">
-  <div class="tabs">
-    <ul class="nav nav-tabs" id="steamTab" role="tablist">
-      <li class="nav-item">
-        <a class="nav-link active steam-area" id="all-tab" data-bs-toggle="tab" data-bs-target="#all" role="tab" aria-controls="all" aria-selected="true">Todos</a>
-      </li>
-      <% @steam_areas.each do |area| %>
-        <li class="nav-item">
-          <a class="nav-link steam-area" id="<%= area.downcase %>-tab" data-bs-toggle="tab" data-bs-target="#<%= area.downcase %>" role="tab" aria-controls="<%= area.downcase %>" aria-selected="false"><%= area %></a>
-        </li>
-      <% end %>
-    </ul>
-
-    <div class="tab-content">
-      <div class="tab-pane fade show active" id="all" role="tabpanel" aria-labelledby="all-tab">
-        <%= render 'recursos', resources: @resources %>
+  <% @steam_areas.each do |area| %>
+    <div class="area-section <%= area.parameterize %>">
+      <h2 class="area-title <%= area.parameterize %>"><%= area %></h2>
+      <div class="cards-scroll-wrapper">
+        <%= render 'recursos', resources: @resources.where(steam_area: area) %>
       </div>
-
-      <% @steam_areas.each do |area| %>
-        <div class="tab-pane fade" id="<%= area.downcase %>" role="tabpanel" aria-labelledby="<%= area.downcase %>-tab">
-
-          <% unless @resources.where(steam_area: area, resource_type: 'Artículo').empty? %>
-            <div class="resource-group">
-              <h3>Artículos</h3>
-              <%= render 'recursos', resources: @resources.where(steam_area: area, resource_type: 'Artículo') %>
-            </div>
-          <% end %>
-
-          <% unless @resources.where(steam_area: area, resource_type: 'Vídeo').empty? %>
-            <div class="resource-group">
-              <h3>Videos</h3>
-              <%= render 'recursos', resources: @resources.where(steam_area: area, resource_type: 'Vídeo') %>
-            </div>
-          <% end %>
-
-          <% unless @resources.where(steam_area: area, resource_type: 'PDF').empty? %>
-            <div class="resource-group">
-              <h3>Libros/PDFs</h3>
-              <%= render 'recursos', resources: @resources.where(steam_area: area, resource_type: 'PDF') %>
-            </div>
-          <% end %>
-
-          <% unless @resources.where(steam_area: area, resource_type: 'Curso').empty? %>
-            <div class="resource-group">
-              <h3>Cursos recomendados</h3>
-              <%= render 'recursos', resources: @resources.where(steam_area: area, resource_type: 'Curso') %>
-            </div>
-          <% end %>
-        </div>
-      <% end %>
     </div>
-  </div>
+  <% end %>
 </div>

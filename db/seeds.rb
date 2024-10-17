@@ -46,14 +46,6 @@ Recurso.create!([
     resource_type: "Curso"
   },
   {
-    titulo: "The Innovator's Dilemma",
-    descripcion: "A business classic that explains how disruptive innovation can affect industries and companies.",
-    url: "https://www.amazon.com/Innovators-Dilemma-Technologies-Management-Innovation/dp/1633691780",
-    category_id: 3,
-    steam_area: "Ingeniería",
-    resource_type: "Libro"
-  },
-  {
     titulo: "Women in Science: 50 Fearless Pioneers Who Changed the World",
     descripcion: "A beautifully illustrated book that highlights the contributions of women in science, technology, engineering, and math.",
     url: "https://www.goodreads.com/book/show/28502860-women-in-science",
